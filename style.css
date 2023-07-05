@@ -1,0 +1,131 @@
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header {
+    height: 65px;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+.brand-logo{
+    font-size: 40px;
+    font-weight: 700;
+}
+ul.list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+.list-items {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.list-items a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+.list-items a:hover::after{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    content: "";
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+.sidebar {
+    position: relative;
+    height: 100vh;
+}
+.contact-info{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.email-detail:before{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    content: "";
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+ul.social-icons{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+ul.social-icons li a {
+    padding: 10px;
+    color: #fff;
+}
+.gallery-wrapper{
+    overflow-y: scroll;
+    height: 100vh;
+}
+.masonary-grid {
+    column-count: 4;
+    column-gap: 10px;
+  }
+  .fashion-grid{
+    column-count: 2;
+    column-gap: 10px;
+  }
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    width: 100%;
+  }
+  .fashion-bg{
+    background-image: url('images/pexels14.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    object-fit: cover;
+    height: 40vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fashion-bg span{
+    color: #fff;
+    font-size: 5rem;
+  }
+  .conatct-wrapper{
+    max-width: 600px;
+    margin: auto;
+  }
+  @media screen and (max-width:767px) {
+    .masonary-grid {
+        column-count: 2;
+        column-gap: 10px;
+      }
+      .fashion-bg span{
+        font-size: 2rem;
+      }
+      iframe{
+        height: 400px;
+      }
+  }
